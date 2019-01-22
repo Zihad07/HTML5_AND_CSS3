@@ -1,0 +1,84 @@
+/*
+
+Universal selector
+* {
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+*/
+
+body {
+    color: #878787;
+    margin: 0;
+/*    font-size: 150%;*/
+    
+    font-size: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    
+/*    shor-hand font */
+    font: normal 1em/1.5 Helvetica, Arial, sans-serif;
+/*    font: font-weight font-size/line-height font-family */
+}
+
+.main-header {
+    background-color: orange;
+}
+
+.title {
+    color: white;
+    font-size: 1.625em; /* 26/16 to 1.625em*/
+}
+
+ol li {
+    color: white;
+    background-color: tomato;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 5.625em; /* 90/16 to 5.625em*/
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+h2 { font-size: 53px;}
+
+h3 {
+    font-size: 20px;
+    color: #48525c;
+}
+
+.primary-content,
+.main-header {
+    text-align: center;
+}
+
+.secondary-content {
+    
+}
+
+.t-border {
+    border-top: 2px solid lightgrey;
+}
+
+.primary-content, .secondary-content {
+    width: 60%;
+}
+
+/* ID selector */
+#main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 10px solid orange;
+}
+
+
+/* Pseodo class*/
+a:link {color: orange; text-decoration: none;}
+a:visited {color: orange}
+a:hover {color: forestgreen;}
+a:active{color: red;}
