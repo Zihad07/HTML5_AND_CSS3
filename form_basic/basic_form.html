@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Basic</title>
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Person nal information</legend>
+            First name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname">
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <form action="#">
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="ohter"> Other<br>
+    </form>
+
+    <form action="#">
+        <select name="cars">
+            <option value="toyota">To-yo-Ta</option>
+            <option value="volvo" selected>Volovo</option>
+            <option value="tata">Tataa</option>
+        </select>
+    </form>
+    
+    <form action="">
+        <input list="browsers" name="browser">
+        
+        <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="FireFox"></option>
+            <option value="Chrome"></option>
+        </datalist>
+        
+        <input type="submit" value="submit">
+        
+    </form>
+</body>
+
+</html>
