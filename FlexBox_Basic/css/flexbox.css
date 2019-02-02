@@ -1,0 +1,55 @@
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+    flex-direction: row; /* default */
+    flex-wrap: wrap;
+/*
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse
+*/
+    
+/*    justify-content*/
+/*
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+*/
+    
+    
+    
+    
+}
+
+/*
+.item-2 {
+// justify content
+    margin-right: auto
+}*/
+
+
+/* order learning */
+/*
+.item-1 {
+    order: 1;
+}
+.item-5 {
+    order: -1;
+}
+*/
+
+/*-----------------------------------------*/
+/* felex grow */
+
+/*
+.item {
+    flex-grow: 1;
+}
+
+.item-2{
+    flex-grow: 4;
+}
+*/
