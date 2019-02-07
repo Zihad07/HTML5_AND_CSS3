@@ -1,0 +1,157 @@
+
+/*
+ Orange : #e67e22;
+*/
+
+
+/*---------------------------------*/
+/*--- BASIC SETUP ---*/
+/*---------------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/*---------------------------------*/
+/*--- REUSEABLE COMPONENT ---*/
+/*---------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*-- CLEAR-FIX ---*/
+.clear-fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*--- HEADING ---*/
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+
+}
+
+/*--- BUTTONS ---*/
+.btn:link,
+.btn:visited {
+
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 200px;
+
+    transition: all 0.25s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    border: 1px solid #e67e22;
+    background: #e67e22;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+
+/* Hover */
+
+.btn:active,
+.btn:hover {
+    background-color: #cf6d17;
+}
+
+
+.btn-full:active,
+.btn-full:hover {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:active,
+.btn-ghost:hover {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+
+/*---------------------------------*/
+/*--- HEADER ---*/
+/*---------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 55px
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+    font-size: 90%; /* 18px */
+    text-transform: uppercase;
+    padding: 8px 0; /*top-bottom left-right */ 
+    word-spacing: 3px;
+    border-bottom: 2px solid transparent;
+    
+    transition: all 0.25s;
+}
+
+.main-nav li a:active,
+.main-nav li a:hover {
+    border-bottom: 2px solid #e67e22;
+}
