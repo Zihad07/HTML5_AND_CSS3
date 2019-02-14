@@ -21,6 +21,7 @@ body {
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 /*---------------------------------*/
@@ -224,13 +225,24 @@ header {
     transform: translate(-50%, -50%);
 }
 
-
 .logo {
     height: 100px;
     width: auto;
     float: left;
     margin-top: 20px;
 }
+
+.logo-black { 
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+
+
+/*--- main-nav ---*/
 
 .main-nav {
     list-style: none;
@@ -263,6 +275,31 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+
+/*--- Sticky ----*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 2px #efefef;
+    
+    z-index: 100000;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    padding: 16px 0;
+    
+}
+
+.sticky .logo { display: none;}
+.sticky .logo-black { display: block;}
+.sticky .main-nav { margin-top: 18px;}
 
 /*---------------------------------*/
 /*--- SECTION-FEATURS ---*/
