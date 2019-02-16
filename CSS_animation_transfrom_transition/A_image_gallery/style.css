@@ -1,0 +1,99 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+h1 {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    color: #34495e;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+}
+
+div.item {
+    
+    position: relative;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      
+}
+
+div.item * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.item img {
+    max-width: 100%;
+    vertical-align: top;
+    height: 210px
+}
+
+div.item i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 34px;
+    border-radius: 50%;
+    width: 60px;
+    line-height: 60px;
+    color: #000;
+    background: #fff;
+}
+
+
+div.item.red {
+  background-color: #e74c3c;
+}
+div.item.red i {
+  color: #e74c3c;
+}
+
+div.item.green {
+  background-color: #16a085;
+}
+div.item.green i {
+  color: #16a085;
+}
+
+div.item:hover img {
+    opacity: 0.3;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+div.item *{
+    -webkit-transition: all .30s ease-in-out;
+    transition: all .30s ease-in-out;
+}
+
+div.item i {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+}
+
+div.item:hover i {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
+
+
+
