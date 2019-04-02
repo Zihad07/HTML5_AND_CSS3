@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form & Input</title>
+</head>
+<body>
+
+    <form action="">
+        <!-- input-text -->
+        <div>
+            <label for="name">NAME</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter the name">
+        </div>
+
+        <!-- input-email -->
+        <div>
+            <label for="email">EMAIL</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter the email">
+        </div>
+
+        <!-- input-password -->
+        <div>
+            <label for="pwd">PASSWORD</label><br>
+            <input type="password" name="pwd" id="pwd">
+        </div>
+
+        <!-- textarea -->
+        <div>
+            <label for="message">MESSAGE</label><br>
+            <textarea name="message" id="message" cols="30"
+             rows="5"></textarea>
+        </div>
+
+        <!-- select option -->
+        <div>
+            <label for="sex">SEX</label>
+            <select name="sex" id="sex">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- input-number -->
+        <div>
+            <label for="age">AGE</label>
+            <input type="number" name="age" id="age">
+        </div>
+
+        <!-- input-date -->
+        <div>
+            <label for="birthday">BIRTHDAY</label><br>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+
+        <!-- radio-btn -->
+        <div>
+            <label for="membership">MEMBERSHIP</label>
+            <input type="radio" name="membership" id="membership" value="simple"> Simple
+            <input type="radio" name="membership" id="membership" value="standard" checked> Standard
+            <input type="radio" name="membership" id="membership" value="Super"> Super
+        </div>
+
+        <!-- checkbox -->
+        <div>
+            <label for="like">I like</label>
+            <input type="checkbox" name="like" id="like" value="criket"> Criket
+            <input type="checkbox" name="like" id="like" value="programming" checked> Programming
+            <input type="checkbox" name="like" id="like" value="movie"> Watching Movie
+        </div>
+
+        <!-- submit button -->
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    
+</body>
+</html>
