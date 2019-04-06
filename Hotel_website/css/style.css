@@ -176,7 +176,7 @@ p { margin: 10px 0;}
 
 /* Features */
 
-.features .box {
+.box {
     width: 33.33%;
     float: left;
     padding: 50px;
@@ -241,6 +241,38 @@ p { margin: 10px 0;}
     margin-right: 10px;
     border-radius: 50%;
 }
+
+/* Contack form */
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-form .form-group textarea{
+    height: 150px;;
+}
+
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus{
+
+    outline: none;
+    border-color: #f7c08a;
+}
+
 
 /* Main-footer */
 
