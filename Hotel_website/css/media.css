@@ -1,0 +1,98 @@
+
+@media screen and (max-width: 768px){
+    body {
+        /* display: none; */
+    }
+
+    #navbar .logo,
+    #navbar ul, #navbar ul li{
+        float: none;
+        text-align: center
+    }
+
+     #navbar ul li a{
+        padding: 5px;
+        border-bottom: 1px solid #444;
+    }
+
+    .showcase .showcase-content {
+        
+        padding-top: 0px;
+    }
+
+    /* #navbar ul li a:last-of-type{
+        border-bottom: none;
+    } 
+    */
+
+    /* Home-info */
+
+    .home-info .info-img{
+        display: none;
+    }
+
+    .home-info .info-content{
+        float: none;
+        width: 100%;
+       
+    }
+
+    /* Boxes */
+
+    .box {
+        float: none;
+        width: 100%;
+    }
+
+
+    /* About page */
+
+    .about-info .info-left,
+    .about-info .info-right {
+        float: none;
+        width: 100%;
+    }
+
+    .l-heading {
+        text-align: center;
+    }
+
+    .about-info .info-right{
+        margin-top: 20px
+    }
+
+    /* Contact page */
+
+    .contact-info .box {
+        border-bottom: 1px dotted #444;
+        padding: 30px;
+    }
+
+}
+
+/* Land scape */
+
+@media (max-height: 500px){
+    .showcase .showcase-content {
+        
+        padding: 20px 0;
+    }
+
+    .showcase .showcase-content h1{
+        font-size: 35px;
+        line-height: 1.2em;
+    }
+    .showcase .showcase-content p{
+        /* margin-bottom: 20px; */
+        line-height: 1.2em;
+    }
+
+    .home-info .info-content{
+    
+        padding: 20px;
+    }
+
+    
+
+    
+}
