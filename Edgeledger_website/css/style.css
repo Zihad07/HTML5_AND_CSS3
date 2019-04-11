@@ -26,6 +26,10 @@ ul {list-style: none;}
 .text-primary { color: #93cb52; }
 .text-center { text-align: center;}
 
+.bg-primary {
+    color: #fff;
+    background: #93cb52;
+}
 .bg-dark {
     color: #f4f4f4;
     background: #333
@@ -70,6 +74,11 @@ ul {list-style: none;}
     border: none;
     border-radius: 5px; 
     transition: all 0.25s;
+}
+
+.btn-dark {
+    color: #fff;
+    background: #333
 }
 
 .btn:hover {
@@ -200,5 +209,27 @@ ul {list-style: none;}
     margin: auto;
     width: 60%;
 
+}
+
+/* Contact Section */
+
+#contact {
+    display: flex;
+}
+
+#contact .contact-form, #contact .map {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+.contact-form .form-group label { display: block;}
+.contact-form input,
+.contact-form .form-group textarea{
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid rgb(143, 132, 132);
+    border-radius: 5px;
 }
 
