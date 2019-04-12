@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advanced Selector</title>
+
+    <style>
+        input[type="text"],
+        input[type="email"]{
+            width: 100%;
+            padding: 10px;
+            margin: 0 0 5px 0;
+        }
+
+        ul {
+            padding: 30px;
+            list-style: none;
+        }
+        
+        ul li {
+            padding: 5px;
+            margin-bottom: 3px;
+        }
+
+        li:first-child{
+            background: red;
+            color: #fff
+        }
+
+        li:last-child {
+            color: #f4f4f4;
+            background: #333;
+        }
+
+        li:nth-child(5) {
+            color: aqua;
+        }
+
+        li:nth-child(3n+0){
+            color: #f4f4f4;
+            background: #333;
+        }
+
+        li:nth-child(even){
+            color: pink;
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <form action="">
+            <input type="text" name="" id="" placeholder="Enter Name">
+            <input type="email" name="" id="" placeholder="Enter Email">
+            <input type="submit" name="" id="" placeholder="Enter Email">
+            
+        </form>
+    </div>
+
+    <div>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+            <li>item 7</li>
+            <li>item 8</li>
+            <li>item 9</li>
+            <li>item 10</li>
+            <li>item 11</li>
+            <li>item 12</li>
+        </ul>
+    </div>
+</body>
+</html>

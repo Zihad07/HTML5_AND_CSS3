@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box-Shadow</title>
+
+
+    <style>
+        
+        :root {
+            /* Custom variable */
+            --primary-color :coral;
+            --red-color :red;
+            --text-color : #444;
+            --max-width : 1100px;
+            --auto : auto;
+
+        }
+        .box {
+            background: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        .container {
+            display: flex;
+            max-width: var(--max-width);
+            margin : var(--auto);
+
+        }
+
+        .box {
+            box-shadow: 5px 5px 5px 1px gray;
+            box-shadow: -5px -5px 5px 1px gray;
+            box-shadow: 5px 5px  3px 1px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Transition work */
+
+        .flag-area {
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flag {
+            width: 300px;
+            height: 200px;
+            background: green;
+            
+            /* For Red-circle center */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+       .flag .red-circle {
+            
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--red-color);
+
+            transition: all 1.5s linear;
+
+        }
+
+
+
+        .flag .red-circle:hover {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <h3>Helow</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, totam.</p>
+        </div>
+        <div class="box">
+            <h3>Helow</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, totam.</p>
+        </div>
+        <div class="box">
+            <h3>Helow</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, totam.</p>
+        </div>
+    </div>
+
+    <div class="contianer flag-area">
+        <div class="flag">
+            <div class="red-circle"></div>
+        </div>
+    </div>
+</body>
+</html>
