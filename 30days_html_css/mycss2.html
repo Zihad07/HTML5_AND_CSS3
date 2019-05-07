@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Modak|Sofia" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Font | Css</title>
+
+    <style>
+        h1 {
+             text-align: center;
+             border: 1px solid black;
+             padding: 5px;
+
+             text-transform: capitalize;
+             text-transform: uppercase;
+
+             letter-spacing: 3px;
+             font-family: 'Modak', cursive;
+        }
+        p {
+            text-align: center;
+            text-align: right;
+            text-align: justify;
+            line-height: 1.4;
+            text-indent: 20px;
+
+            font-family: 'Sofia', cursive;
+
+        }
+
+        span {
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid black;;
+            margin: 10px 0 0 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            background: gray;
+        }
+
+        a:hover{
+            background: lightblue;
+        }
+
+        .icons {
+            margin-top: 10px;
+            width: 500px;
+            display: flex;
+            margin: auto;
+        
+        }
+        .icons i {
+
+            text-align: center;
+            font-size: 30px;
+            padding: 5px;
+        }
+
+        .mylist {
+            list-style: square inside;
+        }
+    
+        table, td, th {
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            
+        }
+
+        td,th {
+            padding: 5px;
+        }
+
+        tr:nth-child(even){
+            background: gray;
+            color: white;
+        }
+
+        .display h2 {
+            /* display: none; */
+            /* text-align: center; */
+            /* display: inline; */
+        }
+
+        .display span {
+            /* display: block; */
+            /* text-align: center; */
+        }
+
+        .overflow {
+            height: 300px;
+            width: 400px;
+            border: 1px solid black;
+            padding: 10px;
+
+
+            overflow: hidden;
+            overflow: scroll;
+            overflow: auto;
+        }
+        .float {
+            max-width: 100%;
+            border: 1px solid gray;
+            margin: 20px 0; 
+        }
+        .box {
+
+            height: 200px;
+            width: 24%;
+            background: black;
+
+            float: left;
+            margin: 0 5px;
+
+        }
+
+        .box1 {
+            background: red;
+        }
+        .box2 {
+            background: orange;
+        }
+        .box3 {
+            background: blue;
+        }
+        .box4 {
+            background: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font:Css</h1>
+
+    <p><span>Lorem</span> ipsum dolor sit amet consectetur, adipisicing elit. Nulla, laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellat tempore suscipit quo hic aspernatur error qui deleniti reiciendis consequuntur, totam rem eligendi rerum corporis commodi accusantium excepturi odit sint ut, optio adipisci illum, quod beatae tempora? Sequi eaque libero quos animi nostrum quas delectus molestiae quam minus. Vitae ratione recusandae quaerat asperiores explicabo obcaecati doloremque adipisci dignissimos corrupti ea fugiat modi nobis pariatur ullam reprehenderit, voluptas nemo veniam repellendus ipsam atque, ipsum incidunt laudantium accusamus! Et, odit cupiditate! Quos, odit! Vero sapiente possimus aspernatur, laudantium cumque assumenda praesentium? Ipsum cumque ex et consectetur nihil nesciunt nostrum, laboriosam a asperiores!</p>
+
+    <div><a href="#">My link</a></div>
+
+    <div class="icons">
+        <div><i class="fab fa-twitter"></i></div>
+        <div><i class="fab fa-facebook"></i></div>
+        <div><i class="fab fa-instagram"></i></div>
+        <div><i class="fab fa-facebook-messenger"></i></div>
+    </div>
+
+    <ul class="mylist">
+        <li>Apple - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque doloremque obcaecati expedita nostrum ipsa doloribus laudantium modi deleniti praesentium facere?</li>
+        <li>Javkfruit - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quas error, assumenda tempora molestias voluptatum excepturi dolor. Ipsa, eum perspiciatis.
+        </li>
+    </ul>
+
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>last-name</th>
+            <th>email</th>
+        </tr>
+
+        <tr>
+            <td>Nahid</td>
+            <td>hasan</th>
+            <td>nahid34@gmail.codm</td>
+        </tr>
+        <tr>
+            <td>Nahid</td>
+            <td>hasan</th>
+            <td>nahid34@gmail.codm</td>
+        </tr>
+        <tr>
+            <td>Nahid</td>
+            <td>hasan</th>
+            <td>nahid34@gmail.codm</td>
+        </tr>
+        <tr>
+            <td>Nahid</td>
+            <td>hasan</th>
+            <td>nahid34@gmail.codm</td>
+        </tr>
+        <tr>
+            <td>Nahid</td>
+            <td>hasan</th>
+            <td>nahid34@gmail.codm</td>
+        </tr>
+    </table>
+
+
+
+    <div class="display">
+        <h2>HELLO</h2>
+
+        <span>Logo</span>
+    </div>
+
+
+    <div class="overflow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facilis doloremque voluptatibus quia quam, incidunt culpa molestiae, vitae veniam excepturi amet. Rerum expedita voluptates minima assumenda labore id in possimus iure. Odit, minus. Quidem repellendus minus iusto harum, placeat ad, velit aliquid natus, quas vero officiis consequatur. Perferendis delectus temporibus eveniet? A unde ut molestias, illo tempore impedit temporibus alias dolore iste voluptates ipsum rerum praesentium consequatur neque? Quidem sed asperiores, voluptas odio, molestias quis facere, officiis tenetur distinctio eos iste rem. Corrupti laboriosam fugiat aliquid ducimus, itaque numquam similique in ratione, neque eaque ab adipisci ut corporis architecto cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facilis doloremque voluptatibus quia quam, incidunt culpa molestiae, vitae veniam excepturi amet. Rerum expedita voluptates minima assumenda labore id in possimus iure. Odit, minus. Quidem repellendus minus iusto harum, placeat ad, velit aliquid natus, quas vero officiis consequatur. Perferendis delectus temporibus eveniet? A unde ut molestias, illo tempore impedit temporibus alias dolore iste voluptates ipsum rerum praesentium consequatur neque? Quidem sed asperiores, voluptas odio, molestias quis facere, officiis tenetur distinctio eos iste rem. Corrupti laboriosam fugiat aliquid ducimus, itaque numquam similique in ratione, neque eaque ab adipisci ut corporis architecto cupiditate.
+    </div>
+
+    <div class="float">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>
