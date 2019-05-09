@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Sprite</title>
+
+    <style>
+
+        .icons {
+            width: 150px;
+            margin: auto;
+            /* overflow: hidden; */
+        }
+    
+        .icons ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .icons ul li {
+            float: left;
+            margin-right: 10px;
+
+        }
+
+        .icons ul li:last-child {
+            margin-right:0 
+        }
+
+        .icons ul li a {
+            background: url('images/image_sprites.png') no-repeat;
+            background-position: 0 0;
+            
+            width: 39px;
+            height: 39px;
+            display: inline-block;
+            border: 1px solid #333;
+
+            border-radius: 50%;
+            
+            transition: all 0.25s;
+
+        }
+
+        .icons ul li:hover:nth-child(1) a{
+            background-position: 0 -39px; 
+        }
+
+        .icons ul li:nth-child(2) a {
+            background-position:  -79px 0;
+        }
+        .icons ul li:hover:nth-child(2) a {
+            background-position:  -79px -39px;
+        }
+
+        .icons ul li:nth-child(3) a {
+            background-position:  -116px 0;
+        }
+        .icons ul li:hover:nth-child(3) a {
+            background-position:  -116px -39px;
+        }
+
+        /* .icons ul li a:hover:nth-child(1) {
+            background-position: 0 -39px; 
+        }
+
+        .icons ul li a:hover:nth-child(1) {
+            background-position: 0 -39px; 
+        } */
+        
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Imgae Sprites</h2>
+    <div class="icons">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+</body>
+</html>

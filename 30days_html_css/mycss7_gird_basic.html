@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+
+    <style>
+    
+     .grid-container {
+         display: grid;
+
+         grid-template-columns: auto auto auto;
+
+
+         /* grid-template-columns: 50px 50px 50px;
+
+        // it works horizontally
+
+         justify-content: end;
+         justify-content: center;
+         justify-content: space-evenly;
+         justify-content: space-between;
+         justify-content: start; */
+
+        /* grid-template-columns: auto auto auto; */
+        
+        /* It works vertically */
+        /* height: 500px;
+        align-content: center;
+        align-content: start;
+        align-content: end;
+        align-content: space-between;
+        align-content: space-around; */
+
+
+        /* gird-gap: row  coloum */
+         grid-gap: 10px 50px;;
+
+         background: gray;
+         color: white;
+
+         padding: 10px;
+
+
+     }
+
+     .grid-item {
+         padding: 5px;
+         border: 1px solid;
+         text-align: center;
+     }
+
+     /* .item1 {
+         grid-column-start: 1;
+         grid-column-end: 4;
+     }
+     .item2 {
+         grid-column-start: 1;
+         grid-column-end: 3;
+     } */
+
+     /* .item1 {
+         grid-row-start: 1;
+         grid-row-end: 4;
+     }
+
+     .item3 {
+         grid-row-start: 1;
+         grid-row-end: 4;
+     } */
+
+
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+</html>

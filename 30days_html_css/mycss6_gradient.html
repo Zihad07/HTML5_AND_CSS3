@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box-shadow</title>
+
+    <style>
+        .grad {
+            height: 400px;
+            width: 400px;
+            /* background: linear-gradient(to righ bottom, red,green) */
+
+            background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,1))
+        }
+
+        .box-shadow {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #d4d4d4;
+
+            /* Box shadow */
+            
+            transition: all 0.20s;
+            
+        }
+
+        .box-shadow:hover {
+            box-shadow: 0 5px 5px rgba(100, 93, 93, 0.5),
+                        5px 3px 5px rgba(100, 93, 93, 0.5),
+                        -5px 0 5px rgba(100, 93, 93, 0.5);
+        }
+
+        .container {
+            padding: 20px;
+            text-transform: capitalize;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        img {
+            width: 100%;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <!-- <div class="grad"></div> -->
+
+
+    <!-- Box- shadow -->
+
+    <div class="box-shadow">
+        <img src="images/adorable-baby-child.jpg" alt="baby">
+
+        <div class="container">
+            A Beatiful Girl.
+        </div>
+    </div>
+
+
+
+</body>
+</html>
