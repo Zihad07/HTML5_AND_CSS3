@@ -40,6 +40,7 @@ h1,h2,h3,h4,h5,h6 {
 
 p {
     margin-bottom: .5rem;
+    text-align: justify;
 }
 
 /* Utility */
@@ -69,6 +70,8 @@ p {
     padding: 1rem;
     background: #fff;
 }
+
+.l-heading { font-size: 3rem; }
 
 .bg-dark {
     background: var(--dark-color);
@@ -142,6 +145,19 @@ p {
 
 .list li a:hover {
     color: var(--primary-color) !important;
+}
+
+/* Inner page grid container */
+
+.page-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 2rem 0;
+    grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child {
+    grid-row: 1/span 3;
 }
 /* Navigation */
 
@@ -251,6 +267,19 @@ p {
 }
 
 /* Home ariticles end*/
+
+/* Article section start*/
+
+#article .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: .5rem;
+}
+
+#article .meta .catagory { margin-top: .4rem;}
+/* Article section end*/
 
 /* Footer style start */
 
